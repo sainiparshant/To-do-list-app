@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(130deg , #476854 ,#476769);
+    padding: 10px;
+}
+    
+.app-container{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 30px 30px 70px;
+    border-radius: 10px;
+}
+
+.app-container h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-container h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+#input-task{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.add-task{
+    outline: none;
+    border: none;
+    padding: 16px 30px;
+    background-color: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ul li {
+    margin-left: 30px;
+    font-size: 17px;
+    padding: 12px 8px 12px 0px;
+    user-select: none;
+    cursor: pointer;
+    position: relative; 
+}
+
+ul li .del-btn {
+    background-color: #fff;
+    color: grey;
+    padding: 3px;
+    font-weight: 900;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    transition: all 0.3s ease; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li .del-btn:hover {
+    color: #ff5945; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
